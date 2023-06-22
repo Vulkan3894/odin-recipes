@@ -2,17 +2,56 @@
 <html>
   <head>
     <title>Cellular Respiration Blog</title>
+    <style>
+      /* Add some basic styling to the navigation bar */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <h1>Cellular Respiration</h1>
-    <img src="cellular_respiration.jpg" alt="Cellular Respiration">
-    <p>Cellular respiration is the process by which cells convert nutrients into energy. This energy is used to power various cellular processes, including growth and repair.</p>
-    <h2>The Process of Cellular Respiration</h2>
-    <p>There are three main stages of cellular respiration: glycolysis, the citric acid cycle, and the electron transport chain. During glycolysis, glucose is broken down into two molecules of pyruvate. This process produces ATP and NADH.</p>
-    <img src="glycolysis.jpg" alt="Glycolysis">
-    <p>The citric acid cycle, also known as the Krebs cycle, takes place in the mitochondria. During this stage, pyruvate is further broken down and more ATP and NADH are produced.</p>
-    <img src="citric_acid_cycle.jpg" alt="Citric Acid Cycle">
-    <p>The final stage of cellular respiration is the electron transport chain. This stage takes place in the inner membrane of the mitochondria. During this stage, the energy from NADH and FADH2 is used to produce ATP.</p>
-    <img src="electron_transport_chain.jpg" alt="Electron Transport Chain">
+    <!-- Add the navigation bar -->
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#process">The Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div style="margin-left:200px;">
+      <h1>Cellular Respiration</h1>
+      <img src="img/cellular_respiration.jpg" width="650" height="500" alt="Cellular Respiration">
+      <p>Cellular respiration is the process by which cells convert nutrients into energy. This energy is used to power various cellular processes, including growth and repair.</p>
+      <h2 id="process">The Process of Cellular Respiration</h2>
+      <p>There are three main stages of cellular respiration: glycolysis, the citric acid cycle, and the electron transport chain. During glycolysis, glucose is broken down into two molecules of pyruvate. This process produces ATP and NADH.</p>
+      <img src="glycolysis.jpg" alt="Glycolysis">
+      <p>The citric acid cycle, also known as the Krebs cycle, takes place in the mitochondria. During this stage, pyruvate is further broken down and more ATP and NADH are produced.</p>
+      <img src="citric_acid_cycle.jpg" alt="Citric Acid Cycle">
+      <p>The final stage of cellular respiration is the electron transport chain. This stage takes place in the inner membrane of the mitochondria. During this stage, the energy from NADH and FADH2 is used to produce ATP.</p>
+      <img src="electron_transport_chain.jpg" alt="Electron Transport Chain">
+    </div>
   </body>
 </html>
