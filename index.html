@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>Cellular Respiration Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <style>
       /* Add some basic styling to the navigation bar */
+      body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         width: 200px;
-        background-color: rgb(225, 221, 221);
+        background-color: #e3dfdf;
         position: fixed;
         height: 100%;
         overflow: auto;
@@ -17,19 +24,34 @@
 
       li a {
         display: block;
-        color: #000;
+        color: #333;
         padding: 8px 16px;
         text-decoration: none;
       }
 
       li a.active {
-        background-color: rgb(56, 197, 229);
+        background-color: #4CAF50;
         color: white;
       }
 
       li a:hover:not(.active) {
         background-color: #555;
         color: white;
+      }
+
+      /* Add some styling to the main content */
+      .main-content {
+        margin-left: 200px;
+        padding: 20px;
+      }
+
+      .main-content h1, .main-content h2 {
+        margin-top: 0;
+      }
+
+      .main-content img {
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
@@ -38,12 +60,12 @@
     <ul>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#process">The Process</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <div style="margin-left:200px;">
+    <!-- Add the main content -->
+    <div class="main-content">
       <h1>Cellular Respiration</h1>
-      <img src="img/cellular_respiration.jpg" width="650" height="500" alt="Cellular Respiration">
+      <img src="img/cellular_respiration.jpg" alt="Cellular Respiration">
       <p>Cellular respiration is the process by which cells convert nutrients into energy. This energy is used to power various cellular processes, including growth and repair.</p>
       <h2 id="process">The Process of Cellular Respiration</h2>
       <p>There are three main stages of cellular respiration: glycolysis, the citric acid cycle, and the electron transport chain. During glycolysis, glucose is broken down into two molecules of pyruvate. This process produces ATP and NADH.</p>
